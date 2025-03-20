@@ -18,7 +18,7 @@ int main() {
     }
     output = fopen("output.txt", "w");
     if (output == NULL) {
-        printf("Error: Could not open the output file.\n");
+        printf("Error: Could not open the output file.Try again\n");
         fclose(file);
         return 1;
     }
@@ -30,7 +30,7 @@ int main() {
             y_values[count] = y;
         } else {
             printf("Some error has occurred, contact developer\n");
-            fprintf(output, "Dataset %d: Error occurred\n", count + 1);
+            fprintf(output, "Dataset %d: Error occurred \n", count + 1);
             y_values[count] = 0;  
         }
         count++;
