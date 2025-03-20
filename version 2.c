@@ -11,6 +11,6 @@ int main() {
     printf("Enter value x: ");
     scanf("%d", &x);
     y = a * pow(x, 2) + b * x + c;
-    printf("The predicted value is %d units\n", y);
+    printf("The predicted value is given as %d units\n", y);
     return 0;
 }
