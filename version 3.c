@@ -3,11 +3,11 @@
 #include <math.h>
 int main() {
     FILE *file;
-    int a, b, c, x = 1;
+    int a, b, c, x = 2;
     int y;
     file = fopen("singleinput.text", "r");
     if (file == NULL) {
-        printf("Error: Could not open the file.\n");
+        printf("Error:Could not open the file.\n");
         return 1;
     }
     if (fscanf(file, "%d", &a) != 1 ||
@@ -20,7 +20,7 @@ int main() {
     fclose(file);
     y = a * pow(x, 2) + b * x + c;
     if (y) {
-        printf("The model's prediction if it 'Rains' tomorrow is %d%%\n", y);
+        printf("The model's prediction if it 'sunny' tomorrow is %d%%\n", y);
     } else {
         printf("Unknown error has occured\n");
     }
