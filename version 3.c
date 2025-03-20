@@ -22,7 +22,7 @@ int main() {
     if (y) {
         printf("The model's prediction if it 'Rains' tomorrow is %d%%\n", y);
     } else {
-        printf("Unknown error occured\n");
+        printf("Unknown error has occured\n");
     }
     return 0;
 }
